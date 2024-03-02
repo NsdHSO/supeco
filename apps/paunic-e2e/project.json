@@ -1,0 +1,16 @@
+{
+  "name": "paunic-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "implicitDependencies": ["paunic"],
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{e2eProjectRoot}"],
+      "options": {
+        "jestConfig": "apps/paunic-e2e/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

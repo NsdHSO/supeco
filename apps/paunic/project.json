@@ -1,0 +1,24 @@
+{
+  "name": "paunic",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/paunic/src",
+  "projectType": "application",
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "paunic:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "paunic:build:development"
+        },
+        "production": {
+          "buildTarget": "paunic:build:production"
+        }
+      }
+    }
+  },
+  "tags": []
+}
