@@ -1,0 +1,9 @@
+{
+  "name": "shape-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/shape-e2e/src",
+  "implicitDependencies": ["shape"],
+  "// targets": "to see all targets run: nx show project shape-e2e --web",
+  "targets": {}
+}
